@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<dungeon>
+	<information>
+		<title>Newcomer's Guild</title>
+		<creation_date>05/13/2015</creation_date>
+		<biome>Forest</biome>
+		<description>The newcomer's guild was founded to aid the adventurous in beginning their journey.</description>
+		<room_count>3</room_count>
+	</information>
+	<rooms>
+		<room>
+			<name>Armory</name>
+			<text>You enter a large room filled with shelves full of weapons and armor.  A large man stands in the middle keeping careful watch over the equipment.</text>
+			<exits>
+				<exit>
+					<name>Inscription Room</name>
+					<description>Regular door</description>
+				</exit>
+				<exit>
+					<name>Martial Courtyard</name>
+					<description>Large double doors</description>
+				</exit>
+			</exits>
+			
+		</room>
+		<room>
+			<name>Inscription Room</name>
+			<text>You enter a room lined with shelves containing thick bound tomes.  A small elderly elf sits at a small table wielding a quill and parchment.</text>
+			<exits>
+				<exit>
+					<name>Armory</name>
+					<description>Regular door</description>
+				</exit>
+			</exits>
+		</room>
+		<room>
+			<name>Martial Courtyard</name>
+			<text>As you step out into the light, you find yourself in an expansive courtyard filled with animated practice dummies.  The dummies seem to be capable to basic communication.</text>
+			<exits>
+				<exit>
+					<name>Armory</name>
+					<description>Large double doors</description>
+				</exit>
+			</exits>
+		</room>
+	</rooms>
+	<npcs>
+		<npc>
+			<name>Lasond</name>
+			<hostile>No</hostile>
+			<actions>
+				<action>Inscribe new character</action>
+			</actions>
+		</npc>
+		<npc>
+			<name>Marx</name>
+			<hostile>No</hostile>
+			<actions>
+				<action>Choose Starting Equipment</action>
+			</actions>
+		</npc>
+		<npc>
+			<name>Training Dummy</name>
+			<hostile>No</hostile>
+			<actions>
+				<action>Train Starting Martial Skill</action>
+			</actions>
+		</npc>
+	</npcs>
+</dungeon>
