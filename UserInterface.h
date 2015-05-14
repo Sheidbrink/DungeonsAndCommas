@@ -11,6 +11,7 @@ class UserInterface
 		static const char promptChar = '>';
 		static std::string Prompt(std::string prompt);
 		static int Decision_Prompt(std::string prompt, std::vector<std::string> choices);
+		static void Message(std::string message);
 	private:
 		
 };

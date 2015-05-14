@@ -43,7 +43,16 @@ int UserInterface::Decision_Prompt(std::string prompt, std::vector<std::string> 
 std::string UserInterface::Prompt(std::string prompt)
 {
 	std::string toReturn;
-	std::cout << prompt << std::endl << UserInterface::promptChar;
+	if(!prompt.empty())
+	{
+		std::cout << prompt << std::endl;
+	}
+	std::cout << UserInterface::promptChar;
 	std::getline(std::cin, toReturn);
 	return toReturn;
+}
+
+void UserInterface::Message(std::string message)
+{
+	std::cout << message << std::endl;
 }
