@@ -6,12 +6,12 @@ int UserInterface::Decision_Prompt(std::string prompt, std::vector<std::string> 
 	// Output the information
 	std::cout << prompt << std::endl;
 	// Output and number the choices
-	for(int i = 0; i < choices.size(); ++i)
+	for(std::size_t i = 0; i < choices.size(); i++)
 	{
 		std::cout << i+1 << ": " << choices[i] << std::endl;
 	}
 
-	int userInput = -1;
+	unsigned int userInput;
  	std::string rawInput;
 	// Repeatedly read input from stdin until a valid option is
 	// chosen
