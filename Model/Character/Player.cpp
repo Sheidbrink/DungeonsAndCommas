@@ -4,24 +4,11 @@ Player::Player(std::string name) : Player(name, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 {
 
 }
-Player::Player(std::string name, int str, double hr, int end, int maxHealth, 
-			int health, int dex, int intel, int maxMana, int mana)
+Player::Player(std::string n, int s, double hR, int e, int mH, 
+		int h, int d, int i, int mM, int m) : 
+		Character(n,s,hR,e,mH,h,d,i,mM,m)
 {
-	this->name = name;
-	this->strength = str;
-	this->hitRate = hr;
-	this->endurance = end;
-	this->maxHealth = maxHealth;
-	this->health = health;
-	this->dexterity = dex;
-	this->intelligence = intel;
-	this->maxMana = maxMana;
-	this->mana = mana;
-	this->level = 0;
-	this->experience = 0;
-	this->inventory = new Backpack();
 }
 Player::~Player()
 {
-	delete this->inventory;
 }

@@ -7,7 +7,10 @@
 class Character
 {
 	public:
-		Character(){}
+		Character(std::string n, int s, double hR, int e, int mH, 
+			int h, int d, int i, int mM, int m) : name(n), strength(s), hitRate(hR),
+			endurance(e), maxHealth(mH), health(h), dexterity(d), intelligence(i),
+			maxMana(mM), mana(m), inventory(){}
 		~Character(){}
 		std::string name;
 		int strength;
@@ -25,7 +28,7 @@ class Character
 
 		unsigned int level;
 		unsigned int experience;
-		Backpack* inventory;
+		Backpack inventory;
 	private:
 };
 
