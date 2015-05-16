@@ -19,4 +19,9 @@ Player::Player(std::string name, int str, double hr, int end, int maxHealth,
 	this->mana = mana;
 	this->level = 0;
 	this->experience = 0;
+	this->inventory = new Backpack();
+}
+Player::~Player()
+{
+	delete this->inventory;
 }

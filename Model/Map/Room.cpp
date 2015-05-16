@@ -1,6 +1,8 @@
 #include "Room.h"
 
-Room::Room(std::string name, std::string desc)
+using namespace std;
+
+Room::Room(string name, string desc)
 {
 	this->name = name;
 	this->description = desc;

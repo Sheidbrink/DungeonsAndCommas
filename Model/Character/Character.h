@@ -2,6 +2,7 @@
 #define CHARACTER_H
 
 #include <string>
+#include "../Character/Backpack.h"
 
 class Character
 {
@@ -24,6 +25,7 @@ class Character
 
 		unsigned int level;
 		unsigned int experience;
+		Backpack* inventory;
 	private:
 };
 

@@ -1,10 +1,14 @@
 CC=g++
 CFLAGS=-c -Wall -std=c++11
 LDFLAGS=
-MAP=Model/Map/Room.cpp
-CHARACTER=Model/Character/Player.cpp
+MAP=Model/Map/Map.cpp Model/Map/Room.cpp
+CHARACTER=Model/Character/Player.cpp Model/Character/Backpack.cpp
+ITEMS=Model/Items/Item.cpp
+MODEL=$(MAP) $(CHARACTER) $(ITEMS)
+VIEW=View/UserInterface.cpp
+VIEWMODEL=
 TESTS=test.hpp
-SOURCES=main.cpp $(MAP) $(CHARACTER) $(TESTS) UserInterface.cpp
+SOURCES=main.cpp $(MODEL) $(VIEW) $(VIEWMODEL) $(TESTS)
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=Game
 
@@ -18,3 +22,5 @@ $(EXECUTABLE): $(OBJECTS)
 clean:
 	rm *.o Game
 	rm ./Model/Character/*.o
+	rm ./Model/Map/*.o
+	rm ./View/*.o

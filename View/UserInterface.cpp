@@ -6,7 +6,7 @@ int UserInterface::Decision_Prompt(std::string prompt, std::vector<std::string> 
 	// Output the information
 	std::cout << prompt << std::endl;
 	// Output and number the choices
-	for(std::size_t i = 0; i < choices.size(); i++)
+	for(std::vector<std::string>::size_type i = 0; i < choices.size(); i++)
 	{
 		std::cout << i+1 << ": " << choices[i] << std::endl;
 	}

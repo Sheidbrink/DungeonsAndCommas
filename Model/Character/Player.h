@@ -9,6 +9,7 @@ class Player : public Character
 		Player(std::string name, int str, double hr, int end, int maxHealth, 
 			int health, int dex, int intel, int maxMana, int mana);
 		Player(std::string name);
+		~Player();
 	private:
 };
 
