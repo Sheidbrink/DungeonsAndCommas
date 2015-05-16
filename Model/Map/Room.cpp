@@ -2,10 +2,8 @@
 
 using namespace std;
 
-Room::Room(string name, string desc)
+Room::Room(string n, string d) : name(n), description(d)
 {
-	this->name = name;
-	this->description = desc;
 }
 
 std::string Room::EnterCreature(Character* character)

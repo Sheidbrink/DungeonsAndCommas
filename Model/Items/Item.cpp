@@ -2,8 +2,6 @@
 
 using namespace std;
 
-Item::Item(string n, int v)
+Item::Item(string n, int v) : name(n), value(v)
 {
-	this->name = n;
-	this->value = v;
 }

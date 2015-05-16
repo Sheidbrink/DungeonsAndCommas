@@ -2,11 +2,8 @@
 
 using namespace std;
 
-Map::Map(string name, string description, vector<Room*> rooms)
+Map::Map(string n, string d, vector<Room*> r) : name(n), description(d), rooms(r)
 {
-	this->name = name;
-	this->description = description;
-	this->rooms = rooms;
 }
 void Map::AddRoom(Room* room)
 {

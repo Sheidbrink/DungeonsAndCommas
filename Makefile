@@ -23,4 +23,5 @@ clean:
 	rm *.o Game
 	rm ./Model/Character/*.o
 	rm ./Model/Map/*.o
+	rm ./Model/Items/*.o
 	rm ./View/*.o
