@@ -1,7 +1,6 @@
 #include "./View/UserInterface.h"
 #include "./Model/Character/Player.h"
-#include "./Model/Map/Map.h"
-#include "./Model/Map/Room.h"
+#include "./Model/Game.h"
 
 int main(int argc, char* argv[])
 {
@@ -9,7 +8,7 @@ int main(int argc, char* argv[])
 	UserInterface::Message("Welcome to Dungeons and Commas!");
 	// Sign in/Create Player
 	std::string characterName = UserInterface::Prompt("What is your username?");
-	Player* character;
+	Player* character = NULL;
 	Room* currentRoom;
 	std::string command;
 	//Check if Character Exists
